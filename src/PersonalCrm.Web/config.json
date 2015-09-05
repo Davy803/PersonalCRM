@@ -1,0 +1,10 @@
+{
+  "AppSettings": {
+    "SiteTitle": "PersonalCrm.Web"
+  },
+  "Data": {
+    "DefaultConnection": {
+      "ConnectionString": "Server=(localdb)\\mssqllocaldb;Database=aspnet5-PersonalCrm.Web-6a917d19-bd9e-4c95-8232-b28fbe260c5d;Trusted_Connection=True;MultipleActiveResultSets=true"
+    }
+  }
+}
