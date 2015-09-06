@@ -1,12 +1,7 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.Data.Entity.Relational.Migrations;
 using Microsoft.Data.Entity.Relational.Migrations.Builders;
-using Microsoft.Data.Entity.Relational.Migrations.Operations;
 
-namespace PersonalCrm.Web.Migrations
+namespace PersonalCrm.Data.Migrations
 {
     public partial class CreateIdentitySchema : Migration
     {

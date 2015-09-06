@@ -7,8 +7,8 @@ using System.Security.Principal;
 using Microsoft.AspNet.Authorization;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Mvc;
+using PersonalCrm.Data.Models;
 using PersonalCrm.Web;
-using PersonalCrm.Web.Models;
 using PersonalCrm.Web.Services;
 using PersonalCrm.Web.ViewModels.Manage;
 

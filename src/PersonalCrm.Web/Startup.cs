@@ -20,7 +20,8 @@ using Microsoft.Framework.DependencyInjection;
 using Microsoft.Framework.Logging;
 using Microsoft.Framework.Logging.Console;
 using Microsoft.Framework.Runtime;
-using PersonalCrm.Web.Models;
+using PersonalCrm.Data;
+using PersonalCrm.Data.Models;
 using PersonalCrm.Web.Services;
 
 namespace PersonalCrm.Web
