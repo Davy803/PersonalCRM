@@ -10,9 +10,11 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Mvc;
 using Microsoft.AspNet.Mvc.Rendering;
 using Microsoft.Data.Entity;
+using PersonalCrm.Data;
+using PersonalCrm.Data.Models;
 using PersonalCrm.Web;
-using PersonalCrm.Web.Models;
 using PersonalCrm.Web.Services;
+using PersonalCrm.Web.ViewModels.Account;
 
 namespace PersonalCrm.Web.Controllers
 {

@@ -20,7 +20,8 @@ using Microsoft.Framework.DependencyInjection;
 using Microsoft.Framework.Logging;
 using Microsoft.Framework.Logging.Console;
 using Microsoft.Framework.Runtime;
-using PersonalCrm.Web.Models;
+using PersonalCrm.Data;
+using PersonalCrm.Data.Models;
 using PersonalCrm.Web.Services;
 
 namespace PersonalCrm.Web
@@ -68,6 +69,12 @@ namespace PersonalCrm.Web
             {
                 options.AppId = Configuration["Authentication:Facebook:AppId"];
                 options.AppSecret = Configuration["Authentication:Facebook:AppSecret"];
+            });
+
+            services.Configure<GoogleAuthenticationOptions>(options =>
+            {
+                options.ClientId = Configuration["Authentication:Google:ClientId"];
+                options.ClientSecret = Configuration["Authentication:Google:ClientSecret"];
             });
 
             services.Configure<MicrosoftAccountAuthenticationOptions>(options =>
@@ -118,8 +125,8 @@ namespace PersonalCrm.Web
 
             // Add authentication middleware to the request pipeline. You can configure options such as Id and Secret in the ConfigureServices method.
             // For more information see http://go.microsoft.com/fwlink/?LinkID=532715
-            // app.UseFacebookAuthentication();
-            // app.UseGoogleAuthentication();
+            app.UseFacebookAuthentication();
+            app.UseGoogleAuthentication();
             // app.UseMicrosoftAccountAuthentication();
             // app.UseTwitterAuthentication();
 
