@@ -13,6 +13,7 @@ using Microsoft.Data.Entity;
 using PersonalCrm.Web;
 using PersonalCrm.Web.Models;
 using PersonalCrm.Web.Services;
+using PersonalCrm.Web.ViewModels.Account;
 
 namespace PersonalCrm.Web.Controllers
 {
