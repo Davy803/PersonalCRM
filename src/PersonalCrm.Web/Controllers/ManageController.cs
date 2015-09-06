@@ -10,6 +10,7 @@ using Microsoft.AspNet.Mvc;
 using PersonalCrm.Web;
 using PersonalCrm.Web.Models;
 using PersonalCrm.Web.Services;
+using PersonalCrm.Web.ViewModels.Manage;
 
 namespace PersonalCrm.Web.Controllers
 {
